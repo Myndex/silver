@@ -807,7 +807,46 @@ This project is part of the &lt;a href="https://www.myndex.com/WEB/Perception"&g
 			<li>Convert from 8 bit integer to decimal 0.0-1.0
 			<li>Linearize (remove gamma)
 			<li>Apply sRGB coefficients and sum to Y<br>
-			<img src="images/sRGBcoefficients.png">
+			<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>Y</mi>
+      <mo>=</mo>
+      <msub>
+        <mi>R</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>l</mi>
+          <mi>i</mi>
+          <mi>n</mi>
+        </mrow>
+      </msub>
+      <mo>&#x2217;<!-- ∗ --></mo>
+      <mn>0.2126</mn>
+      <mo>+</mo>
+      <msub>
+        <mi>G</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>l</mi>
+          <mi>i</mi>
+          <mi>n</mi>
+        </mrow>
+      </msub>
+      <mo>&#x2217;<!-- ∗ --></mo>
+      <mn>0.7152</mn>
+      <mo>+</mo>
+      <msub>
+        <mi>B</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>l</mi>
+          <mi>i</mi>
+          <mi>n</mi>
+        </mrow>
+      </msub>
+      <mo>&#x2217;<!-- ∗ --></mo>
+      <mn>0.0722</mn>
+    </mrow>
+  </mstyle>
+</math>
 					
 		</ul>	
 		<li>Determine which is brighter for contrast polarity
